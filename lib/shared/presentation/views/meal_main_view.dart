@@ -1,4 +1,4 @@
-import 'package:balanced_meal/config/themes/styles/texts/app_texts_styles.dart';
+import 'package:balanced_meal/core/routers/go_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -11,13 +11,9 @@ class MealMainView extends StatelessWidget {
       designSize: Size(375, 812),
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (context, child) => MaterialApp(
+      builder: (context, child) => MaterialApp.router(
         debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          body: Center(
-            child: Text("Balanced Meal", style: AppTextsStyles.appTitleStyle()),
-          ),
-        ),
+        routerConfig: routerHandeler,
       ),
     );
   }

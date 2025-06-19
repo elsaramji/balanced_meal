@@ -3,6 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppTextsStyles {
+  static TextStyle poppinesWithWeight(
+    Color color, {
+    double? fontSize,
+    FontWeight? fontWeight,
+  }) => GoogleFonts.poppins(
+    fontWeight: fontWeight ?? FontWeight.w400,
+    color: color,
+    fontSize: fontSize ?? 14.sp,
+  );
   static TextStyle poppinesMedium(Color color, {double? fontSize}) =>
       GoogleFonts.poppins(
         fontWeight: FontWeight.w500,
