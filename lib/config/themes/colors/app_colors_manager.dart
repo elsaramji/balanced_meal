@@ -8,4 +8,6 @@ class AppColorsManager {
   static const Color primaryBackground = Color(0xFFFBFBFB);
   static const Color primaryText = Color(0xFF1E1E1E);
   static const Color secondaryText = Color(0xFF959595);
+  static const Color customText = Color(0xFF474747);
 }
+

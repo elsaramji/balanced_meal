@@ -41,7 +41,10 @@ class WelcomeOverLayerItmes extends StatelessWidget {
           // button start
           Padding(
             padding: EdgeInsets.only(bottom: 43.h),
-            child: AppTextButton(text: 'Order Food', onPressed: orderfoodclick),
+            child: AppTextButton(
+              text: 'Order Food',
+              onPressed: () => orderfoodclick(context),
+            ),
           ),
         ],
       ),

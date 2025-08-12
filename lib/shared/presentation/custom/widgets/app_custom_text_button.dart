@@ -1,13 +1,12 @@
 import 'package:balanced_meal/config/themes/colors/app_colors_manager.dart';
 import 'package:balanced_meal/config/themes/styles/texts/app_texts_styles.dart';
-import 'package:balanced_meal/core/context/context_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class AppTextButton extends StatelessWidget {
+class CustomAppTextButton extends StatelessWidget {
   final void Function()? onPressed;
   final String text;
-  const AppTextButton({super.key, this.onPressed, required this.text});
+  const CustomAppTextButton({super.key, this.onPressed, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -21,12 +20,12 @@ class AppTextButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(12.r),
         ),
 
-        minimumSize: Size(context.widthScreen, 60.h),
+        minimumSize: Size(65.w, 32.h),
       ),
       child: Text(
         text,
         style: AppTextsStyles.poppinesMedium(
-           AppColorsManager.white,
+          AppColorsManager.white,
           fontSize: 16.sp,
         ),
       ),
